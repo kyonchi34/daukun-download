@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#100c09">
-  <meta name="description" content="DAUKUNのダウンロードページ。Windows版のダウンロード、Android版・iOS版の配布状況、インストール方法をご案内します。">
+  <meta name="description" content="DAUKUNのダウンロードページ。Windows版とAndroidベータ版のダウンロード、iOS版の配布状況、インストール方法をご案内します。">
   <title>ダウンロード | DAUKUN</title>
   <link rel="icon" type="image/png" href="./app-icon.png">
   <link rel="stylesheet" href="./styles.css">
@@ -38,15 +38,15 @@
           <div class="release-heading"><h3>Windows版</h3><span class="status available">配布中</span></div>
           <p class="release-description">PCで、いつものDAUKUNを。</p>
           <dl class="release-meta"><div><dt>バージョン</dt><dd>1.13.21</dd></div><div><dt>対応</dt><dd>Windows / 64bit</dd></div><div><dt>ファイル</dt><dd>EXE · 19.7 MB</dd></div></dl>
-          <a class="download-button" href="https://nbizgnsactlihljnckol.supabase.co/storage/v1/object/public/daukun-updates/DAUKUN_1.13.21_x64-setup.exe" download="DAUKUN_1.13.21_x64-setup.exe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/></svg>Windows版をダウンロード</a>
+          <a class="download-button" href="https://github.com/kyonchi34/daukun-download/releases/download/windows-v1.13.21/DAUKUN_1.13.21_x64-setup.exe" download="DAUKUN_1.13.21_x64-setup.exe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/></svg>Windows版をダウンロード</a>
           <p class="download-note">インストーラー（.exe）を保存します。</p>
         </div>
         <div id="panel-android" class="platform-panel" role="tabpanel" aria-labelledby="tab-android" tabindex="0" hidden>
-          <div class="release-heading"><h3>Android版</h3><span class="status testing">テスト中</span></div>
+          <div class="release-heading"><h3>Android版</h3><span class="status testing">ベータ配布中</span></div>
           <p class="release-description">スマホでも、だうくんをそばに。</p>
-          <div class="pending-copy"><span class="pending-label">BETA TEST</span><p>現在、実機での動作を確認しています。<br>配布の準備が整い次第、こちらからダウンロードできます。</p></div>
-          <button class="download-button unavailable" type="button" disabled>Android版は配布準備中</button>
-          <p class="download-note">ダウンロード開始までお待ちください。</p>
+          <dl class="release-meta"><div><dt>バージョン</dt><dd>1.13.24</dd></div><div><dt>対応</dt><dd>Android / ベータ版</dd></div><div><dt>ファイル</dt><dd>APK · 697.8 MB</dd></div></dl>
+          <a class="download-button" href="https://github.com/kyonchi34/daukun-download/releases/download/android-v1.13.24-beta/DAUKUN_1.13.24_android-beta.apk" download="DAUKUN_1.13.24_android-beta.apk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/></svg>Android版をダウンロード</a>
+          <p class="download-note">着せ替えの保存を改善したベータ版です。<br>APK（約698 MB）を保存します。Wi-Fiでのダウンロードがおすすめです。</p>
         </div>
         <div id="panel-ios" class="platform-panel" role="tabpanel" aria-labelledby="tab-ios" tabindex="0" hidden>
           <div class="release-heading"><h3>iOS版</h3><span class="status planned">準備中</span></div>
@@ -63,12 +63,14 @@
       <div id="guide-windows" class="install-guide" data-guide="windows">
         <ol class="steps"><li><span class="step-no">01</span><h3>ダウンロード</h3><p>「Windows版をダウンロード」から、インストーラーをPCに保存します。</p></li><li><span class="step-no">02</span><h3>インストール</h3><p>保存したEXEファイルを開き、画面の案内に沿ってインストールします。</p></li><li><span class="step-no">03</span><h3>IDを入力して参加</h3><p>DAUKUNを起動し、発行済みのDAUKUN IDを入力して参加します。</p></li></ol>
       </div>
-      <div id="guide-android" class="install-guide" data-guide="android" hidden><div class="guide-wait"><span class="step-no">BETA</span><div><h3>Android版の手順は、配布開始時にご案内します。</h3><p>現在は動作確認中です。配布ファイルとあわせて、インストール方法を掲載します。</p></div></div></div>
+      <div id="guide-android" class="install-guide" data-guide="android" hidden>
+        <ol class="steps"><li><span class="step-no">01</span><h3>APKをダウンロード</h3><p>Android端末で「Android版をダウンロード」を押し、APKの保存が完了するまで待ちます。</p></li><li><span class="step-no">02</span><h3>ファイルを開いてインストール</h3><p>Filesなどの「ダウンロード」からAPKを開きます。インストールの許可を求められた場合は、開いたアプリの「この提供元を許可」をオンにして戻り、インストールします。</p></li><li><span class="step-no">03</span><h3>IDを入力して参加</h3><p>DAUKUNを起動し、発行済みのDAUKUN IDを入力します。すでに利用中の方は、既存アプリを残したまま「更新」を選んでください。</p></li></ol>
+      </div>
       <div id="guide-ios" class="install-guide" data-guide="ios" hidden><div class="guide-wait"><span class="step-no">SOON</span><div><h3>iOS版の配布方法は、決まり次第ご案内します。</h3><p>iPhone向けのダウンロードとインストール手順は、こちらのページに掲載予定です。</p></div></div></div>
     </section>
-    <section class="help-section" aria-labelledby="help-title"><div><p class="eyebrow">BEFORE YOU START</p><h2 id="help-title">はじめる前に</h2></div><div class="help-items"><details><summary>DAUKUN IDがわからないときは？<span aria-hidden="true">＋</span></summary><p>ログイン済みのPC版がある場合は、MY PAGEのID表示を確認してください。確認できない場合は、IDを発行した管理者にお問い合わせください。</p></details><details><summary>Android版・iOS版はいつ使える？<span aria-hidden="true">＋</span></summary><p>Android版は実機でのテスト中、iOS版は対応準備中です。配布の準備が整い次第、このページでご案内します。</p></details><details><summary>アプリに入るための登録は必要？<span aria-hidden="true">＋</span></summary><p>利用には発行済みのDAUKUN IDが必要です。アプリのログイン画面でIDを入力してください。スパファンの初回登録時は、表示名も設定できます。</p></details></div></section>
+    <section class="help-section" aria-labelledby="help-title"><div><p class="eyebrow">BEFORE YOU START</p><h2 id="help-title">はじめる前に</h2></div><div class="help-items"><details><summary>DAUKUN IDがわからないときは？<span aria-hidden="true">＋</span></summary><p>ログイン済みのPC版がある場合は、MY PAGEのID表示を確認してください。確認できない場合は、IDを発行した管理者にお問い合わせください。</p></details><details><summary>Android版・iOS版はいつ使える？<span aria-hidden="true">＋</span></summary><p>Android版はベータ版を配布中です。上の「Android」タブからAPKをダウンロードできます。iOS版は対応準備中で、配布開始日は未定です。</p></details><details><summary>アプリに入るための登録は必要？<span aria-hidden="true">＋</span></summary><p>利用には発行済みのDAUKUN IDが必要です。アプリのログイン画面でIDを入力してください。スパファンの初回登録時は、表示名も設定できます。</p></details></div></section>
   </main>
   <footer class="site-footer"><a class="brand" href="#top"><img src="./app-icon.png" width="28" height="28" alt=""><span>DAUKUN</span></a><span lang="en">Always with you.</span><small>© 2026 DAUKUN</small></footer>
-  <noscript><p class="noscript-note">Windows版は上のボタンからダウンロードできます。Android版はテスト中、iOS版は準備中です。</p></noscript>
+  <noscript><p class="noscript-note">Windows版は上のボタンからダウンロードできます。<a href="https://github.com/kyonchi34/daukun-download/releases/download/android-v1.13.24-beta/DAUKUN_1.13.24_android-beta.apk">Androidベータ版（APK · 697.8 MB）のダウンロードはこちら。</a>iOS版は準備中です。</p></noscript>
 </body>
 </html>
