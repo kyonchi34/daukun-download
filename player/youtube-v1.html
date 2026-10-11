@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="robots" content="noindex, nofollow">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-/+iV8GD1JQQ6VNdFepLAPwYYi0+7v8yMkz5l7ey22Pw='; style-src 'unsafe-inline'; frame-src https://www.youtube.com; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-H3/w3KubzdYmz90GBa64i7yhVzdY1lk1X9l3CI0Vsk4='; style-src 'unsafe-inline'; frame-src https://www.youtube-nocookie.com; base-uri 'none'; form-action 'none'; object-src 'none'">
   <title>DAUKUN アーカイブ再生</title>
   <style>
     html, body { margin: 0; width: 100%; height: 100%; background: #000; color: #fff; }
@@ -32,7 +32,7 @@
     player.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
     player.allowFullscreen = true;
     player.referrerPolicy = 'strict-origin-when-cross-origin';
-    const url = new URL('https://www.youtube.com/embed/' + id);
+    const url = new URL('https://www.youtube-nocookie.com/embed/' + id);
     url.search = new URLSearchParams({autoplay: '1', rel: '0', playsinline: '1', origin: location.origin}).toString();
     player.src = url.href;
     document.body.appendChild(player);
